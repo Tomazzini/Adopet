@@ -11,7 +11,7 @@ public class EmailService {
 
     public void enviarEmail(String to, String subject, String message) {
         SimpleMailMessage email = new SimpleMailMessage();
-        email.setFrom("adopet@email.com.br"); // para qual email
+        email.setFrom("adopet@email.com.br"); // de qual email
         email.setTo(to); // mandar email para quem
         email.setSubject(subject); // assunto do email
         email.setText(message);
